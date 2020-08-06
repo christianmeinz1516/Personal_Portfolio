@@ -1,0 +1,11 @@
+<div class="section" id="projects">
+    <div class="container cc-education">
+        <div class="h4 text-center mb-4 title">Projects</div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft"
+              *ngFor="let p of projects">
+                <app-project-entry [app-project-entry]="p"></app-project-entry>
+            </div>
+        </div>
+    </div>
+</div>

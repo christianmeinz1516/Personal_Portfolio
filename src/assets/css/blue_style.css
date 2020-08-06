@@ -1,0 +1,49 @@
+.bg-primary {
+    background-color: #23365f !important;
+}
+
+.btn-primary {
+    background-color: #23365f;
+    color: #FFFFFF;
+}
+
+.btn {
+    background-color: #23365f;
+    color: #FFFFFF;
+}
+
+.cc-profile-image a:before {
+    content: "";
+    border: 15px solid rgba(59, 52, 151, 0.6);
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    left: 0;
+    -webkit-animation: pulsate 1.6s ease-out;
+            animation: pulsate 1.6s ease-out;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    opacity: 0.0;
+    z-index: 99;
+  }
+
+.sidebar-collapse .navbar-collapse:before {
+    background: #0b1f49;
+    background: linear-gradient(#0b1f49 0%, #000 80%);
+  }
+
+.page-header {
+    background: rgba(44, 44, 44, 0.2);
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(55, 140, 63, 0.6)));
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0), rgba(64, 125, 175, 0.719));
+    /* Standard syntax */
+  }
+
+  ngx-spinner {
+    color: #23365f;
+  }

@@ -1,0 +1,11 @@
+.card .course-head .card-body {
+    min-height: 0px;
+}
+
+app-project-entry .card-text {
+    text-align: center;
+}
+
+app-project-entry .card-title {
+    text-align: center;
+}

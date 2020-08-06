@@ -1,0 +1,14 @@
+    <div class="blog-entry">
+        <div class="card">
+            <img class="card-img-top" src="{{ data.imageUrl }}" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">{{ data.title }}</h4>
+                <h5 class="card-text"><b>{{ data.skillType }}</b></h5>
+                <h5 class="card-text"><span *ngFor="let sd of data.skillDescription">{{ sd }} | </span></h5>
+                <p>{{ data.description }}</p>
+                <div class="project-btn" *ngIf="data.projectUrl !== undefined">
+                    <a href="{{ data.projectUrl }}" class="btn btn-primary stretched-link ml-2 mr-5">See Project</a>
+                </div>
+            </div>
+        </div>
+    </div>

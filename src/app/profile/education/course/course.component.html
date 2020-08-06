@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="card" data-aos="fade-right" data-aos-offset="10">
+        <div class="course-head">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <div class="card-body">
+                        <div class="h4 mt-0 title">{{ data.courseNumber }} - {{ data.title }}</div>
+                        <div class="h7 mt-0 title" style="text-indent: 5%;"><b>Skills/Languages: </b>
+                            <span>{{ data.skills.join(", ") }}</span>
+                        </div>
+                        <div class="h7 mt-0 title" style="text-indent: 5%;"><b>Grade Received: </b>{{ data.grade }}
+                            <div *ngIf="data.classUrl !== undefined">
+                                <a href="{{ data.classUrl }}" class="btn btn-primary stretched-link mr-5">See Course</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="card-body">
+                        <img src="{{ data.imageUrl }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="card-body">
+                    <div class="h6 mt-0 title">Description:</div>
+                    <p>{{ data.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="section" id="education">
+  <div class="container cc-education">
+    <div class="h4 text-center mb-4 title">Education Overview</div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2018-2022</p>
+            <div class="h5">Bachelor's Degree</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Bachelor of Science</div>
+              <h4 class="category">Rose-Hulman Institute of Technology
+              </h4>
+              <ul>
+              <li>Give list of Facts about <b>Rose-Hulman</b>.</li>
+              <li>Make it a list</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2014 - 2018</p>
+            <div class="h5">Secondary School</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">High School</div>
+              <h4 class="category">Edwardsville High School
+              </h4>
+              <ul>
+              <li>Here are some facts</li>
+              <li>about my time in high school.</li>
+              <li>It was<b> hell</b>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container cc-education">
+    <div class="h4 text-center mb-4 title">Relevent Courses Completed</div>
+    <app-course *ngFor="let c of courses" [app-course]="c"></app-course>
+  </div>
+</div>
